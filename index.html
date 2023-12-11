@@ -6,7 +6,90 @@
 		<link rel="stylesheet" href="./src/css/main.css" />
 		<title>BOOKMARK</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
+		<!-- Site header begin -->
+		<header class="site-header">
+			<div class="container">
+				<div class="site-header__inner flex justify-between items-center py-10 md:py-12">
+					<a class="site-logo" href="./index.html">
+						<img
+							class="logo-img"
+							src="./src/images/mobilelogo.svg"
+							width="149"
+							height="25"
+							alt="Bookmark's logo" />
+					</a>
+
+					<nav class="site-header__nav">
+						<ul
+							class="site-header__list gap-x-12 items-center w-full hidden md:flex text-sm text-mainColor">
+							<li class="site-header__items"><a class="site-header__link" href="#">FEATURES</a></li>
+							<li class="site-header__items"><a class="site-header__link" href="#">PRICING</a></li>
+							<li class="site-header__items"><a class="site-header__link" href="#">CONTACT</a></li>
+							<li class="site-header__items">
+								<a
+									class="site-header__link block min-w-[111px] p-3 bg-buttonBgColor text-white rounded-md font-medium text-center"
+									href="#"
+									>LOGIN</a
+								>
+							</li>
+						</ul>
+					</nav>
+
+					<button class="site-header__hamburgermenu md:hidden" type="button"></button>
+				</div>
+			</div>
+		</header>
+		<!-- Site header end -->
+
+		<!-- Site main begin -->
+		<main class="site-main">
+			<!-- Hero section started -->
+			<section class="site-main__hero hero py-10 lg:py-[108.5px]">
+				<div class="container">
+					<div class="hero__inner lg:flex justify-between">
+						<picture class="block mb-24 order-1">
+							<source media="(min-width: 768px)" srcset="./src/images/heroimg.svg" />
+							<img
+								class="mx-auto md:w-[578px] md:h-[385px]"
+								src="./src/images/heroimg.svg"
+								width="313"
+								height="209"
+								alt="" />
+						</picture>
+
+						<div class="hero__content text-center lg:text-left text-mainColor">
+							<div class="hero__title-wrapper max-w-[252px] md:max-w-[404px] mx-auto lg:ml-0">
+								<h1
+									class="hero__title font-medium mb-4 text-[27px] leading-10 tracking-tighter mm:text-3xl md:text-5xl md:leading-[52px] md:mb-6">
+									A Simple Bookmark Manager
+								</h1>
+							</div>
+							<div class="hero__desc-wrapper max-w-[298px] md:max-w-[540px] mx-auto lg:ml-0">
+								<p class="hero__desc mb-8 text-[13px] mm:text-base opacity-50 md:text-lg">
+									A clean and simple interface to organize your favourite websites. Open a new
+									browser tab and see your sites load instantly. Try it for free.
+								</p>
+							</div>
+							<div class="hero__content-inner flex justify-center lg:justify-start mm:space-x-4">
+								<a
+									class="hero__content-links text-xs mm:text-sm leading-7 font-medium text-white p-3 rounded-md px-4 bg-mainBgColor"
+									href="#">
+									Get it on Chrome
+								</a>
+								<a
+									class="hero__content-links text-xs mm:text-sm leading-7 font-medium text-mainColor opacity-75 p-3 rounded-md px-4 bg-[#F7F7F7]"
+									href="#">
+									Get it on Firefox
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Hero section finished -->
+		</main>
+		<!-- Site main end -->
 		<script src="./src/js/main.js"></script>
 	</body>
 </html>

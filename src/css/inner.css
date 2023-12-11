@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "Rubik";
+	font-display: swap;
+	font-weight: 400;
+	src:
+		url("../fonts/rubikregular.woff2") format("woff2"),
+		url("../fonts/rubikregular.woff") format("woff");
+}
+@font-face {
+	font-family: "Rubik";
+	font-display: swap;
+	font-weight: 500;
+	src:
+		url("../fonts/rubikmedium.woff2") format("woff2"),
+		url("../fonts/rubikmedium.woff") format("woff");
+}
+@font-face {
+	font-family: "Rubik";
+	font-display: swap;
+	font-weight: 600;
+	src:
+		url("../fonts/rubiksemibold.woff2") format("woff2"),
+		url("../fonts/rubiksemibold.woff") format("woff");
+}
+
+/* Mobile first */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-family: "Rubik", "Arial", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		padding: 0 24px;
+	}
+}
+
+img {
+	display: block;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+/* Sticky footer */
+
+.site-main {
+	flex-grow: 1;
+}
+
+/* Site header styles begin */
+.site-header__hamburgermenu {
+	width: 18px;
+	height: 15px;
+	background-image: url("../images/hamburgermenu.svg");
+}
+
+/* Site header styles end */
+
+/* Site main begin */
+/* Hero styles started */
+
+.hero {
+	background-image: url("../images/herobgimg.svg");
+	background-repeat: no-repeat;
+	background-position-y: 92px;
+	background-position-x: calc(50% + 224px);
+	background-size: 577px 203px;
+}
+
+@media only screen and (min-width: 768px) {
+	.hero {
+		background-size: 1000px 352px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.hero {
+		background-position-y: 247px;
+		background-position-x: calc(50% + 632px);
+	}
+}
+
+/* Hero styles finished */
+/* Site main end */
+
+/* Site footer begin */
+
+/* Site footer end */
+
+/* Retina background images */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	/* Retina-specific stuff here */
+}
