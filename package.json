@@ -1,0 +1,23 @@
+{
+	"name": "bookmark",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "npx tailwindcss -i ./src/css/inner.css -o ./src/css/main.css",
+		"watch": "npx tailwindcss -i ./src/css/inner.css -o ./src/css/main.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rahmatulloh19/bookmark.git"
+	},
+	"author": "Raxmonov Rahmatulloh",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rahmatulloh19/bookmark/issues"
+	},
+	"homepage": "https://github.com/rahmatulloh19/bookmark#readme",
+	"devDependencies": {
+		"tailwindcss": "^3.3.6"
+	}
+}
