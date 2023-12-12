@@ -105,6 +105,39 @@ img {
 }
 
 /* Hero styles finished */
+
+/* Features styles started */
+
+.features__items {
+	background-image: url("../images/herobgimg.svg");
+	background-repeat: no-repeat;
+	background-position-y: 35px;
+	background-position-x: calc(50% - 170px);
+}
+
+.features__items--intelligent {
+	background-position-y: 84px;
+	background-position-x: calc(50% - 200px);
+}
+
+@media only screen and (min-width: 768px) {
+	.features__items {
+		background-size: 1000px 352px;
+		background-position-y: 80px;
+		background-position-x: calc(50% - 600px);
+	}
+	.features__items--intelligent {
+		background-position-y: 65px;
+		background-position-x: calc(50% - 685px);
+	}
+
+	.features__items--share {
+		background-position-x: calc(50% - 650px);
+	}
+}
+
+/* Features styles finished */
+
 /* Site main end */
 
 /* Site footer begin */
