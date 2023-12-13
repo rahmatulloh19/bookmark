@@ -190,8 +190,23 @@ img {
 	max-width: 99vw;
 	width: 100%;
 }
-@media only screen and (min-width: 1148px) {
-	.features__list-wrapper {
+
+.features__control-list .slick-track {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features__control-items {
+	max-width: calc(99vw - 64px);
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.features__control-list .slick-track {
+		flex-direction: row;
+		max-width: 730px;
+		margin: 0 auto;
 	}
 }
 

@@ -8,6 +8,18 @@ inputs.forEach((item) => {
 });
 
 const elInput = document.querySelector("input[type='checkbox']");
+const elButtons = document.querySelectorAll(".features__buttons");
+
+elButtons.forEach((item) => {
+	item.addEventListener("click", () => {
+		elButtons.forEach((element) => {
+			element.classList.remove("border-b-[#FA5959]");
+			element.classList.add("border-b-transparent");
+		});
+		item.classList.remove("border-b-transparent");
+		item.classList.add("border-b-[#FA5959]");
+	});
+});
 
 elInput.addEventListener("change", () => {
 	document.querySelector(".site-header").classList.toggle("open");
@@ -21,11 +33,7 @@ elInput.addEventListener("change", () => {
 	}
 });
 
-const elButtonsList = document.querySelector(".features__control-list");
-
-// elButtonsList.addEventListener("click", (evt) => {
-// 	evt.target;
-// });
+// Slick settings
 
 $(".features__list").slick({
 	dots: false,
@@ -42,5 +50,6 @@ $(".features__control-list").slick({
 	asNavFor: ".features__list",
 	dots: false,
 	centerMode: false,
+	variableWidth: true,
 	focusOnSelect: true,
 });
