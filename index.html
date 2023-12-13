@@ -20,14 +20,27 @@
 							alt="Bookmark's logo" />
 					</a>
 
-					<nav class="site-header__nav">
-						<ul class="site-header__list gap-x-12 items-center w-full hidden md:flex text-sm">
-							<li class="site-header__items"><a class="site-header__link" href="#">FEATURES</a></li>
-							<li class="site-header__items"><a class="site-header__link" href="#">PRICING</a></li>
-							<li class="site-header__items"><a class="site-header__link" href="#">CONTACT</a></li>
+					<nav class="site-header__nav hidden md:block">
+						<ul class="site-header__list gap-x-12 items-center w-full px-8 md:px-0 md:flex text-sm">
+							<li
+								class="site-header__items border-t border-b md:border-t-0 md:border-b-0 py-6 text-center">
+								<a class="site-header__link hover:text-buttonBgColor transition-colors" href="#"
+									>FEATURES</a
+								>
+							</li>
+							<li class="site-header__items border-b md:border-b-0 py-6 text-center">
+								<a class="site-header__link hover:text-buttonBgColor transition-colors" href="#"
+									>PRICING</a
+								>
+							</li>
+							<li class="site-header__items border-b md:border-b-0 py-6 text-center mb-6 md:mb-0">
+								<a class="site-header__link hover:text-buttonBgColor transition-colors" href="#"
+									>CONTACT</a
+								>
+							</li>
 							<li class="site-header__items">
 								<a
-									class="site-header__link block min-w-[111px] p-3 bg-buttonBgColor text-white rounded-md font-medium text-center"
+									class="site-header__link block min-w-[111px] p-3 bg-buttonBgColor border-2 border-transparent hover:border-buttonBgColor hover:text-buttonBgColor hover:bg-transparent text-white rounded-md font-medium text-center active:scale-95 transition"
 									href="#"
 									>LOGIN</a
 								>
@@ -36,7 +49,7 @@
 					</nav>
 
 					<label
-						class="btn btn-ghost bg-transparent w-[18px] h-[15px] p-0 swap swap-rotate md:hidden">
+						class="btn btn-ghost bg-transparent w-[18px] text-white h-[16px] p-0 swap swap-rotate md:hidden">
 						<!-- this hidden checkbox controls the state -->
 						<input type="checkbox" />
 
@@ -45,7 +58,7 @@
 							class="swap-off fill-current"
 							xmlns="http://www.w3.org/2000/svg"
 							width="18"
-							height="15"
+							height="16"
 							viewBox="0 0 18 15"
 							fill="none">
 							<path
@@ -67,9 +80,45 @@
 								fill-rule="evenodd"
 								clip-rule="evenodd"
 								d="M7.99982 5.37868L2.69652 0.0753784L0.575195 2.1967L5.8785 7.5L0.575195 12.8033L2.69652 14.9246L7.99982 9.62132L13.3031 14.9246L15.4244 12.8033L10.1211 7.5L15.4244 2.1967L13.3031 0.0753784L7.99982 5.37868Z"
-								fill="#242A45" />
+								fill="currentColor" />
 						</svg>
 					</label>
+
+					<ul class="site-header__social-list absolute hidden">
+						<li class="site-header__social-items">
+							<a href="#" class="site-header__social-link">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li class="site-header__social-items">
+							<a href="#" class="site-header__social-link">
+								<svg
+									width="24"
+									height="20"
+									viewBox="0 0 24 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div class="menu opacity-95 hidden"></div>
 				</div>
 			</div>
 		</header>
@@ -106,12 +155,12 @@
 							</div>
 							<div class="hero__content-inner flex justify-center lg:justify-start mm:space-x-4">
 								<a
-									class="hero__content-links text-xs mm:text-sm leading-7 font-medium text-white p-3 rounded-md px-4 bg-mainBgColor"
+									class="hero__content-links text-[11px] mm:text-sm leading-7 font-medium text-white p-3 rounded-md px-4 bg-mainBgColor border-2 border-transparent hover:bg-transparent hover:border-mainBgColor hover:text-mainBgColor active:scale-95 transition"
 									href="#">
 									Get it on Chrome
 								</a>
 								<a
-									class="hero__content-links text-xs mm:text-sm leading-7 font-medium opacity-75 p-3 rounded-md px-4 bg-[#F7F7F7]"
+									class="hero__content-links text-xs mm:text-sm leading-7 font-medium opacity-75 p-3 rounded-md px-4 bg-[#F7F7F7] border-2 border-transparent hover:bg-transparent hover:border-[#5B6074] hover:text-[#5B6074] opacity-75 active:scale-95 transition"
 									href="#">
 									Get it on Firefox
 								</a>

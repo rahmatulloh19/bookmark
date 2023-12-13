@@ -73,10 +73,60 @@ img {
 }
 
 /* Site header styles begin */
-.site-header__hamburgermenu {
-	width: 18px;
-	height: 15px;
-	background-image: url("../images/hamburgermenu.svg");
+
+@media only screen and (max-width: 768px) {
+	.open .site-header__nav {
+		display: block;
+		position: absolute;
+		top: 120px;
+		left: 0;
+		z-index: 10;
+		width: 100vw;
+		color: #fff;
+	}
+
+	.open .menu {
+		@apply absolute block w-[100vw] h-[100vh] bg-mainColor top-0 left-0 text-white;
+		backdrop-filter: blur(16.309690475463867px);
+	}
+
+	.open .site-header__items:last-child .site-header__link {
+		padding: 16px 24px 15px;
+		font-size: 20px;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 17px;
+		letter-spacing: 2.308px;
+		border: 2px solid #fff;
+		background-color: transparent;
+	}
+
+	.open .site-header__link {
+		color: #fff;
+	}
+
+	.open .btn-ghost {
+		@apply relative z-10;
+	}
+
+	.open .site-logo {
+		@apply relative z-10;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.open .site-header__social-list {
+		position: absolute;
+		left: 0;
+		bottom: 50px;
+		z-index: 10;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		column-gap: 40px;
+	}
 }
 
 /* Site header styles end */
