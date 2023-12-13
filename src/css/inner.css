@@ -146,6 +146,25 @@ img {
 
 /* Extension styles finished */
 
+/* FAQ styles started */
+
+.collapse {
+	background-image: url("../images/arrrow.svg");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 20px;
+}
+
+.collapse-red-arrow {
+	background-image: url("../images/up-arrow.svg");
+}
+
+.collapse:hover .collapse-title {
+	color: #fa5959;
+}
+
+/* FAQ styles finished */
+
 /* Site main end */
 
 /* Site footer begin */

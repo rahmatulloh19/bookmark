@@ -18,6 +18,7 @@
 	},
 	"homepage": "https://github.com/rahmatulloh19/bookmark#readme",
 	"devDependencies": {
+		"daisyui": "^4.4.19",
 		"tailwindcss": "^3.3.6"
 	}
 }
