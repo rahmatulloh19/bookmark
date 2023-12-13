@@ -139,21 +139,21 @@
 					<ul class="features__control-list mb-20 md:flex md:min-w-[487px] justify-center">
 						<li class="features__control-items border-y md:border-t-0 border-[#495dcf33]">
 							<button
-								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] border-b-[#FA5959]"
+								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] hover:text-buttonBgColor transition border-b-[#FA5959]"
 								type="button">
 								Simple Bookmarking
 							</button>
 						</li>
 						<li class="features__control-items border-b border-[#495dcf33]">
 							<button
-								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] border-b-transparent"
+								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] hover:text-buttonBgColor transition border-b-transparent"
 								type="button">
 								Speedy Searching
 							</button>
 						</li>
 						<li class="features__control-items border-b border-[#495dcf33]">
 							<button
-								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] border-b-transparent"
+								class="features__buttons block mx-auto pt-5 pb-4 border-b-4 md:min-w-[243px] hover:text-buttonBgColor transition border-b-transparent"
 								type="button">
 								Easy Sharing
 							</button>
@@ -286,7 +286,7 @@
 								Minimum version 62
 							</span>
 							<a
-								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium"
+								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium border-2 border-transparent hover:border-mainBgColor hover:text-mainBgColor hover:bg-transparent active:scale-95 transition"
 								href="#">
 								Add & Install Extension
 							</a>
@@ -307,7 +307,7 @@
 								Minimum version 55
 							</span>
 							<a
-								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium"
+								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium border-2 border-transparent hover:border-mainBgColor hover:text-mainBgColor hover:bg-transparent active:scale-95 transition"
 								href="#">
 								Add & Install Extension
 							</a>
@@ -328,7 +328,7 @@
 								Minimum version 46
 							</span>
 							<a
-								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium"
+								class="extension__link inline-block w-full rounded-md leading-7 max-w-[232px] py-2.5 bg-mainBgColor text-white font-medium border-2 border-transparent hover:border-mainBgColor hover:text-mainBgColor hover:bg-transparent active:scale-95 transition"
 								href="#">
 								Add & Install Extension
 							</a>
@@ -357,7 +357,9 @@
 					<ul class="faq__inner max-w-[540px] mx-auto mb-12 md:mb-14">
 						<li class="collapse border-b md:border-t rounded-none">
 							<input type="radio" name="my-accordion-1" />
-							<h3 class="collapse-title text-sm md:text-lg leading-8">What is Bookmark?</h3>
+							<h3 class="collapse-title text-[10px] mm:text-[13px] md:text-lg leading-8">
+								What is Bookmark?
+							</h3>
 							<div class="collapse-content">
 								<p>
 									Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
@@ -370,7 +372,7 @@
 						</li>
 						<li class="collapse border-b rounded-none">
 							<input type="radio" name="my-accordion-1" />
-							<h3 class="collapse-title text-sm md:text-lg leading-8">
+							<h3 class="collapse-title text-[10px] mm:text-[13px] md:text-lg leading-8">
 								How can I request a new browser?
 							</h3>
 							<div class="collapse-content">
@@ -385,7 +387,9 @@
 						</li>
 						<li class="collapse border-b rounded-none">
 							<input type="radio" name="my-accordion-1" />
-							<h3 class="collapse-title text-sm md:text-lg leading-8">Is there a mobile app?</h3>
+							<h3 class="collapse-title text-[10px] mm:text-[13px] md:text-lg leading-8">
+								Is there a mobile app?
+							</h3>
 							<div class="collapse-content">
 								<p>
 									Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
@@ -398,7 +402,7 @@
 						</li>
 						<li class="collapse border-b rounded-none">
 							<input type="radio" name="my-accordion-1" />
-							<h3 class="collapse-title text-sm md:text-lg leading-8">
+							<h3 class="collapse-title text-[10px] mm:text-[13px] md:text-lg leading-8">
 								What about other Chromium browsers?
 							</h3>
 							<div class="collapse-content">
@@ -439,7 +443,7 @@
 							placeholder="Enter your email address"
 							aria-label="Enter your email address" />
 						<button
-							class="site-article__btn rounded-md md:max-w-[128px] w-full text-sm leading-7 border-2 border-transparent font-medium bg-buttonBgColor py-2.5 hover:bg-white hover:text-buttonBgColor hover:border-buttonBgColor hover:scale-95 transition-transform"
+							class="site-article__btn rounded-md md:max-w-[128px] w-full text-sm leading-7 border-2 border-transparent font-medium bg-buttonBgColor py-2.5 hover:bg-white hover:text-buttonBgColor hover:border-buttonBgColor active:scale-95 transition-all"
 							type="submit">
 							Contact Us
 						</button>
@@ -449,6 +453,79 @@
 			<!-- Site article finished -->
 		</main>
 		<!-- Site main end -->
+		<!-- Site footer begin -->
+		<footer class="site-footer bg-mainColor pt-10 pb-11">
+			<div class="container">
+				<div class="site-footer__inner flex flex-col items-center md:flex-row justify-between">
+					<a class="site-footer__logo mb-10 md:mb-0 md:mr-16" href="./index.html">
+						<img src="./src/images/footerlogo.svg" width="148" height="25" alt="Site logo footer" />
+					</a>
+					<ul
+						class="site-footer__list text-white flex flex-col text-center grow md:flex-row md:mb-0 gap-y-8 gap-x-11 mb-12">
+						<li class="site-footer__items">
+							<a
+								class="site-footer__link text-sm leading-[17px] tracking-widest hover:text-buttonBgColor transition"
+								href="#">
+								FEATURES
+							</a>
+						</li>
+						<li class="site-footer__items">
+							<a
+								class="site-footer__link text-sm leading-[17px] tracking-widest hover:text-buttonBgColor transition"
+								href="#">
+								PRICING
+							</a>
+						</li>
+						<li class="site-footer__items">
+							<a
+								class="site-footer__link text-sm leading-[17px] tracking-widest hover:text-buttonBgColor transition"
+								href="#">
+								CONTACT
+							</a>
+						</li>
+					</ul>
+					<ul class="site-footer__social-list flex gap-x-10">
+						<li class="site-footer__social-items">
+							<a
+								class="site-footer__social-link text-white hover:text-buttonBgColor transition"
+								href="#">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+										fill="currentColor" />
+								</svg>
+							</a>
+						</li>
+						<li class="site-footer__social-items">
+							<a
+								class="site-footer__social-link text-white hover:text-buttonBgColor transition"
+								href="#">
+								<svg
+									width="24"
+									height="20"
+									viewBox="0 0 24 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"
+										fill="currentColor" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- Site footer end -->
 		<script src="./src/js/main.js"></script>
 	</body>
 </html>
