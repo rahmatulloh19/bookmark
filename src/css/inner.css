@@ -186,6 +186,15 @@ img {
 	}
 }
 
+.features__list-wrapper {
+	max-width: 99vw;
+	width: 100%;
+}
+@media only screen and (min-width: 1148px) {
+	.features__list-wrapper {
+	}
+}
+
 /* Features styles finished */
 
 /* Extension styles started */

@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css" />
+		<link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css" />
 		<link rel="stylesheet" href="./src/css/main.css" />
 		<title>BOOKMARK</title>
 	</head>
@@ -209,99 +211,103 @@
 						</li>
 					</ul>
 				</div>
-				<ul class="features__list">
-					<li class="features__items">
-						<div class="container">
-							<div class="features__items-inner md:flex items-center">
-								<img
-									class="features__img mx-auto mb-16 md:mb-24 md:mr-32 md:max-w-[536px] md:grow md:h-[346px]"
-									src="./src/images/featuresbg.svg"
-									width="311"
-									height="201"
-									alt="" />
-								<div class="features__items-content">
-									<h3
-										class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
-										Bookmark in one click
-									</h3>
-									<div
-										class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto">
-										<p
-											class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50 md:mb-8">
-											Organize your bookmarks however you like. Our simple drag-and-drop interface
-											gives you complete control over how you manage your favourite sites.
-										</p>
+				<div class="features__list-wrapper">
+					<ul class="features__list">
+						<li class="features__items">
+							<div class="container">
+								<div class="features__items-inner md:flex items-center">
+									<img
+										class="features__img mx-auto mb-16 md:mb-24 md:mr-32 md:max-w-[536px] md:grow md:h-[346px]"
+										src="./src/images/featuresbg.svg"
+										width="311"
+										height="201"
+										alt="" />
+									<div class="features__items-content">
+										<h3
+											class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
+											Bookmark in one click
+										</h3>
+										<div
+											class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto">
+											<p
+												class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50 md:mb-8">
+												Organize your bookmarks however you like. Our simple drag-and-drop interface
+												gives you complete control over how you manage your favourite sites.
+											</p>
+										</div>
+										<a
+											class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block hover:bg-mainBgColor hover:opacity-80 active:scale-95 transition"
+											href="#">
+											More Info
+										</a>
 									</div>
-									<a
-										class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block"
-										href="#">
-										More Info
-									</a>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li class="features__items features__items--intelligent hidden">
-						<div class="container">
-							<div class="features__items-inner md:flex items-center">
-								<img
-									class="features__img mx-auto mb-16 md:mb-24 md:mr-28 md:max-w-[536px] md:grow md:h-[346px]"
-									src="./src/images/intelligent.svg"
-									width="311"
-									height="201"
-									alt="" />
-								<div class="features__items-content">
-									<h3
-										class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
-										Intelligent search
-									</h3>
-									<div
-										class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto md:mb-8">
-										<p class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50">
-											Our powerful search feature will help you find saved sites in no time at all.
-											No need to trawl through all of your bookmarks.
-										</p>
+						</li>
+						<li class="features__items features__items--intelligent hidden">
+							<div class="container">
+								<div class="features__items-inner md:flex items-center">
+									<img
+										class="features__img mx-auto mb-16 md:mb-24 md:mr-28 md:max-w-[536px] md:grow md:h-[346px]"
+										src="./src/images/intelligent.svg"
+										width="311"
+										height="201"
+										alt="" />
+									<div class="features__items-content">
+										<h3
+											class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
+											Intelligent search
+										</h3>
+										<div
+											class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto md:mb-8">
+											<p
+												class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50">
+												Our powerful search feature will help you find saved sites in no time at
+												all. No need to trawl through all of your bookmarks.
+											</p>
+										</div>
+										<a
+											class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block hover:bg-mainBgColor hover:opacity-80 active:scale-95 transition"
+											href="#">
+											More Info
+										</a>
 									</div>
-									<a
-										class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block"
-										href="#">
-										More Info
-									</a>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li class="features__items features__items--share hidden">
-						<div class="container">
-							<div class="features__items-inner md:flex items-center">
-								<img
-									class="features__img mx-auto mb-16 md:mb-24 md:mr-36 md:max-w-[536px] md:grow md:h-[346px]"
-									src="./src/images/share.svg"
-									width="311"
-									height="201"
-									alt="" />
-								<div class="features__items-content">
-									<h3
-										class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
-										Share your bookmarks
-									</h3>
-									<div
-										class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto md:mb-8">
-										<p class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50">
-											Easily share your bookmarks and collections with others. Create a shareable
-											link that you can send at the click of a button.
-										</p>
+						</li>
+						<li class="features__items features__items--share hidden">
+							<div class="container">
+								<div class="features__items-inner md:flex items-center">
+									<img
+										class="features__img mx-auto mb-16 md:mb-24 md:mr-36 md:max-w-[536px] md:grow md:h-[346px]"
+										src="./src/images/share.svg"
+										width="311"
+										height="201"
+										alt="" />
+									<div class="features__items-content">
+										<h3
+											class="features__subtitle text-center text-2xl md:text-left leading-[52px] font-medium tracking-tighter md:tracking-[-0.1px] md:mb-4">
+											Share your bookmarks
+										</h3>
+										<div
+											class="features__desc-wrapper text-center md:text-left max-w-[287px] md:max-w-[451px] mx-auto md:mb-8">
+											<p
+												class="features__desc text-sm md:text-lg leading-6 md:leading-7 opacity-50">
+												Easily share your bookmarks and collections with others. Create a shareable
+												link that you can send at the click of a button.
+											</p>
+										</div>
+										<a
+											class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block hover:bg-mainBgColor hover:opacity-80 active:scale-95 transition"
+											href="#">
+											More Info
+										</a>
 									</div>
-									<a
-										class="text-sm leading-7 py-2.5 min-w-[114px] bg-mainBgColor rounded-md text-white text-center hidden lg:inline-block"
-										href="#">
-										More Info
-									</a>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Features section finished -->
 			<!-- Extension section started -->
@@ -575,6 +581,9 @@
 			</div>
 		</footer>
 		<!-- Site footer end -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
 		<script src="./src/js/main.js"></script>
 	</body>
 </html>

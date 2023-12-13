@@ -20,3 +20,27 @@ elInput.addEventListener("change", () => {
 		document.body.removeAttribute("style");
 	}
 });
+
+const elButtonsList = document.querySelector(".features__control-list");
+
+// elButtonsList.addEventListener("click", (evt) => {
+// 	evt.target;
+// });
+
+$(".features__list").slick({
+	dots: false,
+	arrows: false,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	adaptiveHeight: true,
+});
+
+$(".features__control-list").slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	asNavFor: ".features__list",
+	dots: false,
+	centerMode: false,
+	focusOnSelect: true,
+});
