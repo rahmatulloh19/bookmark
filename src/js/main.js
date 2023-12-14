@@ -41,6 +41,7 @@ $(".features__list").slick({
 	infinite: true,
 	speed: 300,
 	slidesToShow: 1,
+	swipe: false,
 	adaptiveHeight: true,
 });
 
