@@ -86,7 +86,15 @@ img {
 	}
 
 	.open .menu {
-		@apply absolute block w-[100vw] h-[100vh] bg-mainColor top-0 left-0 text-white;
+		position: absolute;
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		background-color: #242a45;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		color: #fff;
 		backdrop-filter: blur(16.309690475463867px);
 	}
 
@@ -106,11 +114,13 @@ img {
 	}
 
 	.open .btn-ghost {
-		@apply relative z-10;
+		position: relative;
+		z-index: 10;
 	}
 
 	.open .site-logo {
-		@apply relative z-10;
+		position: relative;
+		z-index: 10;
 	}
 
 	.menu {
